@@ -19,6 +19,7 @@ const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+const underOrEqual25 = n1 <= 25 && n2 <=25 && n3 <= 25 && n4 <= 25
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
@@ -31,9 +32,10 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 // the ! operator. We could also have tested for 
 // "isUnder25" as an alternative.
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
+const isValid2 = isSum50 && isTwoOdd && underOrEqual25 && isUnique;
 
 // Finally, log the results.
-console.log(isValid);
+console.log(isValid, isValid2);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
