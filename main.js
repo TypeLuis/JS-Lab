@@ -65,7 +65,7 @@ const numLarger = (num1, num2) => num1 > num2
 
 console.log(numLarger(n1,n2))
 
-console.log(((n1 - n2) * n3) % n4)
+console.log(((n2 - n1) * n3) % n4)
 
 
 
